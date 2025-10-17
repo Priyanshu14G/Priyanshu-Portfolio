@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     description: "Futuristic 3D portfolio with projects, experience, and contact.",
     type: "website",
   },
+  icons: {
+    icon: "/favicon.png", // 👈 Path to your favicon
+    shortcut: "/favicon.png",
+    // apple: "/apple-touch-icon.png", // optional (for Apple devices)
+  },
 }
 
 export default function RootLayout({
