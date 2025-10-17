@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/favicon.png", // 👈 Path to your favicon
-    shortcut: "/favicon.png",
+    icon: "/favicon.ico", // 👈 Path to your favicon
+    shortcut: "/favicon.ico",
     // apple: "/apple-touch-icon.png", // optional (for Apple devices)
   },
 }
