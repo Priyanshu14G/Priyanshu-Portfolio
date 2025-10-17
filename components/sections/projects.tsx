@@ -12,6 +12,7 @@ type Project = {
   stack: string[]
   link?: string
   demo?: string
+  image: string // 👈 added image field
 }
 
 const projects: Project[] = [
@@ -21,6 +22,7 @@ const projects: Project[] = [
     stack: ["React", "Node", "OpenAI API"],
     link: "https://github.com/",
     demo: "https://interviewgenius.com/",
+    image: "/interview.png", // 👈 image file in /public
   },
   {
     title: "GreenShop",
@@ -28,6 +30,7 @@ const projects: Project[] = [
     stack: ["React", "NeonDB"],
     link: "https://github.com/",
     demo: "https://greenshop.com/",
+    image: "/greenshop.png",
   },
   {
     title: "MedCortico",
@@ -35,6 +38,7 @@ const projects: Project[] = [
     stack: ["Flask", "ML", "OpenAI API"],
     link: "https://github.com/",
     demo: "https://medcortico.com/",
+    image: "/medcortico.png",
   },
 ]
 
@@ -77,7 +81,7 @@ function TiltCard({ p }: { p: Project }) {
         {/* Header thumbnail */}
         <div className="relative h-40 w-full overflow-hidden">
           <Image
-            src={"/placeholder.svg?height=160&width=640&query=Project%20thumbnail%20neon%20glass"}
+            src={p.image} // 👈 dynamic image per project
             alt={`${p.title} thumbnail`}
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
@@ -138,7 +142,7 @@ export function Projects() {
           <div>
             <h2 className="section-title">Projects</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Selected work across AI, full‑stack, and product engineering.
+              Selected work across AI, full-stack, and product engineering.
             </p>
           </div>
         </div>
