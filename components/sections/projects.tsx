@@ -19,25 +19,25 @@ const projects: Project[] = [
   {
     title: "InterviewGenius",
     desc: "AI mock interview platform with dynamic Q&A and feedback.",
-    stack: ["React", "Node", "OpenAI API"],
-    link: "https://github.com/",
-    demo: "https://interviewgenius.com/",
+    stack: ["ReactJS", "NodeJS", "Express", "MongoDB", "Python", "OpenAI API", "Tailwind CSS", "Clerk"],
+    link: "https://github.com/Priyanshu14G/AI_Interviewer",
+    demo: "https://ai-interviewer-smoky-two.vercel.app/",
     image: "/interview.png", // 👈 image file in /public
   },
   {
     title: "GreenShop",
     desc: "Eco-friendly online store with AI recommendations.",
-    stack: ["React", "NeonDB"],
-    link: "https://github.com/",
-    demo: "https://greenshop.com/",
+    stack: ["ReactJS", "NodeJS"," NeonDB", "Clerk", "REST API", "Tailwind CSS", "shadcn/ui"],
+    link: "https://github.com/Priyanshu14G/GreenShop",
+    demo: "https://greenshop-eta.vercel.app/",
     image: "/greenshop.png",
   },
   {
     title: "MedCortico",
     desc: "AI healthcare assistant for quick triage and insights.",
-    stack: ["Flask", "ML", "OpenAI API"],
+    stack: ["ReactJS", "Flask", "Python", "ML models", "MongoDB", "OpenAI API", "Tailwind CSS"],
     link: "https://github.com/",
-    demo: "https://medcortico.com/",
+    demo: "https://techmakersih.vercel.app/",
     image: "/medcortico.png",
   },
 ]
